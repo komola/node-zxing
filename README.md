@@ -8,10 +8,23 @@ This is a Node.JS wrapper for [Zebra Crossing aka ZXing](http://code.google.com/
 
 ## Usage overview
 
+Install ZXing:
+```
+wget http://zxing.googlecode.com/files/ZXing-2.1.zip
+unzip ZXing-2.1
+cd zxing-2.1 
+ant -f core/build.xml
+ant -f javase/build.xml
+```
+
 ```javascript
-var qrdecoder = require('node-zxing');
+var qrdecoder = require('./node-zxing')({ZXingLocation: "/opt/zxing-2.1/"});
 var path = "./a.jpg";
-qrdecode.decode(a);
+qrdecoder.decode(path, 
+  function(err, out) {
+    console.log(err,out);
+  }
+);
 ```
 
 ## TODO
