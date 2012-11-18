@@ -27,6 +27,15 @@ qrdecoder.decode(path,
 );
 ```
 
+## Options
+
+```javascript
+{
+	ZXingLocation: "/path",
+	try_harder: false // (default)
+}
+```
+
 ## TODO
 
 See the [issue tracker](http://github.com/komola/node-zxing).
