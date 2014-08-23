@@ -8,19 +8,10 @@ This is a Node.JS wrapper for [Zebra Crossing aka ZXing](http://code.google.com/
 
 ## Usage overview
 
-Install ZXing:
-```
-wget http://zxing.googlecode.com/files/ZXing-2.1.zip
-unzip ZXing-2.1
-cd zxing-2.1 
-ant -f core/build.xml
-ant -f javase/build.xml
-```
-
 ```javascript
-var qrdecoder = require('./node-zxing')({ZXingLocation: "/opt/zxing-2.1/"});
+var qrdecoder = require('./node-zxing');
 var path = "./a.jpg";
-qrdecoder.decode(path, 
+qrdecoder.decode(path,
   function(err, out) {
     console.log(err,out);
   }
@@ -35,6 +26,11 @@ qrdecoder.decode(path,
 	try_harder: false // (default)
 }
 ```
+
+## ZXing
+In this repository are two jars (javase.jar and core.jar). Both of these belong to https://github.com/zxing/zxing and were retrieved from http://repo1.maven.org/maven2/com/google/zxing/
+
+ZXing included only for ease of use.
 
 ## TODO
 
