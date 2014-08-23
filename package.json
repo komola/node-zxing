@@ -8,7 +8,7 @@
     }
   ],
   "description": "ZXing Wrapper",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "homepage": "https://github.com/komola/node-zxing",
   "repository": {
     "type": "git",

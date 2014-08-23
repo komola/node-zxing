@@ -9,7 +9,8 @@ This is a Node.JS wrapper for [Zebra Crossing aka ZXing](http://code.google.com/
 ## Usage overview
 
 ```javascript
-var qrdecoder = require('./node-zxing');
+var options = {}
+var qrdecoder = require('./node-zxing')(options);
 var path = "./a.jpg";
 qrdecoder.decode(path,
   function(err, out) {
