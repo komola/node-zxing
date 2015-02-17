@@ -24,7 +24,8 @@ qrdecoder.decode(path,
 ```javascript
 {
 	ZXingLocation: "/path",
-	try_harder: false // (default)
+	try_harder: false,
+  multi: false
 }
 ```
 
